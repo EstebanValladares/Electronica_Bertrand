@@ -20,6 +20,8 @@ nav{
     left: 0;
     padding: 1rem;
     border-radius: 10px;
+    border: 1px solid var(--colorBorder);
+    box-shadow: 0 0 10px 0 var(--colorBorder);
 }
 ul{
     display: flex;
@@ -91,4 +93,36 @@ li a{
 .board article img{
     width: 100%;
     border-radius: 10px;
+}
+.title-contac{
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+}
+.datos{
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.datos article{
+    width: 40%;
+    margin: 15px;
+    padding: 1rem;
+}
+.datos article:nth-last-child(2){
+    border: 1px solid var(--colorBorder);
+    height: 40vh;
+}
+.datos article h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.datos article p{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
 }
