@@ -4,10 +4,12 @@
 }
 
 :root {
-    --colorWhite: #fff;
+    --colorWhite: #ffffff;
+    --colorWhiteLight: #cccccccc;
     --colorBlack: #000;
     --colorBorder: #68616136;
     --colorPrimary: #E7D006;
+    --colorBlueLight: #06a0e7;
 }
 nav{
     background-color: var(--colorWhite);
@@ -35,7 +37,7 @@ li a{
     padding: 1rem;
 }
 .image{
-    background-image: url('./image/fondo3.jpg');
+    background-image: url('../image/fondo3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,4 +127,22 @@ li a{
     width: 100%;
     font-size: 1.2rem;
     padding: 10px;
+}
+/* carrito */
+.carShop{
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+    padding: 1rem;
+    border-radius: 100%;
+}
+/* productos seleccionados*/
+.ProductosShop{
+    background-color: var(--colorWhiteLight);
+    width: 23vw;
+    height: 25vh;
+    display: none;
+    position: absolute;
+    top: 14vh;
+    right: 7vw;
+    border-radius: 10px;
 }
