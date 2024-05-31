@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <article class="container-1">
+            <section class="container-1-cardOne">
+                <img src="../images/card-logo.svg" alt="">
+                <p class="numDates"></p>
+                <div class="dateCards" >
+                    <p class="nameDate"></p>
+                    <p class="dateDaysUser"><span class="dateMont"></span> /<span class="dateDay"></span> </p>
+                </div>
+            </section>
+            <section class="container-1-cardTwo">
+                <p class="dateCvc">000</p>
+            </section>
+        </article>
+        <article class="container-2">
+            <section>
+                <form class="form">
+                    <article class="form-1">
+                        <label for="">CARDHOLDER NAME</label>
+                        <input type="text" placeholder="e.g Jane Applessed" class="nameUser Dom" maxlength="20">
+                        <p class="textNew1 textAlert"></p>
+                    </article>
+                    <article>
+                        <label for="">CARD NUMBER</label>
+                        <input type="text" placeholder="e.g 1234 5678 9123 000" class="numberUser Dom" maxlength="16">
+                        <p class="textNew2 textAlert"></p>
+                    </article>
+                    <article class="date-User">
+                        <section class="date-User-date">
+                            <p>EXP. DATE (MM/YY)</p>
+                            <div class="date-User-date-div">
+                                <input type="text" placeholder="MM" class="mmUser Dom" maxlength="2">
+                                <input type="text" placeholder="YY" class="yyUser Dom" maxlength="2">
+                            </div>
+                            <p class="textNew3 textAlert"></p>
+                        </section>
+                        <section class="date-User-cvc">
+                            <p>CVC</p>
+                            <input type="text" class="cvcUser Dom" placeholder="e.g. 123" maxlength="3">
+                            <p class="textNew4 textAlert"></p>
+                        </section>
+                    </article>
+                    <button>Confirm</button>
+                </form>
+                <article class="messageThank">
+                    <img src="../images/icon-complete.svg" alt="">
+                    <p class="titleThank">THANK YOU!</p>
+                    <p class="textSendDate">We've added your card details</p>
+                    <button class="continuedDate">Continue</button>
+                </article>
+            </section>
+        </article>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

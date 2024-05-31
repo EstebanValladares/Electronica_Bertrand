@@ -5,11 +5,15 @@
 
 :root {
     --colorWhite: #ffffff;
-    --colorWhiteLight: #cccccccc;
+    --colorWhiteLight: #b9b9b9cc;
     --colorBlack: #000;
     --colorBorder: #68616136;
     --colorPrimary: #E7D006;
     --colorBlueLight: #06a0e7;
+    --colorWhite: #fff;
+    --colorButton: rgb(34, 9, 48);
+    --fontText: 'Nunito', sans-serif;
+    
 }
 nav{
     background-color: var(--colorWhite);
@@ -137,12 +141,501 @@ li a{
 }
 /* productos seleccionados*/
 .ProductosShop{
-    background-color: var(--colorWhiteLight);
-    width: 23vw;
-    height: 25vh;
+    width: 20vw;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid var(--colorBorder);
     display: none;
     position: absolute;
     top: 14vh;
     right: 7vw;
     border-radius: 10px;
+}
+.ProductosShop p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--colorBlack);
+
+}
+/* productos */
+.title-products{
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+
+}
+.container-products{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.Products{
+    text-align: center;
+    width: 20vw;
+    height: 29vh;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--colorBorder);
+    border-radius: 10px;
+
+}
+.Products img{
+    max-width: 30%;
+    border-radius: 10px;
+}
+.Products button{
+    font-size: 1.5rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 2% 5%;
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+/* style of news */
+.styleProductsCard{
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    color: var(--colorBlack);
+    border: 1px solid var(--colorBorder);
+}
+/* buy articles */
+.buy{
+    display: none;
+    padding: 1rem;
+    & form {
+        & button {
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            padding: 1% 2%;
+            background-color: var(--colorPrimary);
+            color: var(--colorWhite);
+        }
+    }
+}
+
+/* STYLES LOGIN */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--fontText);
+    & .container-1{
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/nutristock-fba06.appspot.com/o/electronica_bertrand%2Fbg-main-desktop.png?alt=media&token=f9c1e3ac-5274-4de0-b7fb-bff2e2f13c03');
+        width: 35vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        & .container-1-cardOne{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            background-image: url('./images/bg-card-front.png');
+            color: var(--colorWhite);
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            width: 30vw;
+            height: 29vh;
+            z-index: 1;
+            & img{
+                width: 20%;
+                margin-top: 5%;
+                margin-left: 10%;
+            }
+            & .numDates{
+                margin-top: 8%;
+                margin-left: 10%;
+                font-size: 1.5rem;
+                height: 35px;
+            }
+            & .dateCards{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                & .nameDate{
+                    width: 70%;
+                }
+                & .dateDaysUser{
+                    width: 30%;
+                }
+            }
+            & .dateCards{
+                margin-top: 5%;
+                margin-left: 10%;
+                font-size: 1rem;
+            }
+        }
+        & .container-1-cardTwo{
+            position: absolute;
+            top: 65%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            background-image: url('./images/bg-card-back.png');
+            color: var(--colorWhite);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            width: 30vw;
+            height: 29vh;
+            z-index: 1;
+            & .dateCvc{
+                margin-top: 21%;
+                margin-left: 80%;         
+            }
+        }
+    }
+    & .container-2{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 65vw;
+        height: 100vh;
+        & .section{
+            & .form{
+                width: 50vw;
+                height: 60vh;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                background-color: var(--colorWhite); 
+                padding: 20px;
+                & article{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+.date-User{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    & .date-User-date{
+        width: 48%;
+        & .date-User-date-div input{
+            width: 4vw;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    }
+    & .date-User-cvc{
+        width: 48%;  
+    }
+}
+.form article * {
+    display: block;
+}
+.Dom{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #818181;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    z-index: 10;
+}
+.Dom:focus {
+    outline: none;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #818181;
+    background-color: var(--colorButton);
+    color: var(--colorWhite);
+    cursor: pointer;
+}
+.textAlert{
+    height: 3vh;
+    line-height: 3vh;
+    color: #e78282;
+}
+.messageThank{
+    display: none;
+    text-align: center;
+    & .titleThank{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: var(--colorButton);
+    }
+    & .textSendDate{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #818181;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    & .container{
+        display: flex;
+        flex-direction: column;
+        & .container-1{
+            width: 100vw;
+            & .container-1-cardOne{
+                width: 70vw;
+                margin-left: 13%;
+                z-index: 2;
+            }
+            & .container-1-cardTwo{
+                width: 70vw;
+                margin-left: 13%;
+                top: 17%;
+                left: 47%;    
+            }
+        }
+    }
+    & .form{
+        margin-top: 10%;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--fontText);
+    & .container-1{
+        background-image: url('../images/bg-main-desktop.png');
+        width: 35vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        & .container-1-cardOne{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            background-image: url('../images/bg-card-front.png');
+            color: var(--colorWhite);
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            width: 30vw;
+            height: 29vh;
+            z-index: 1;
+            & img{
+                width: 20%;
+                margin-top: 5%;
+                margin-left: 10%;
+            }
+            & .numDates{
+                margin-top: 8%;
+                margin-left: 10%;
+                font-size: 1.5rem;
+                height: 35px;
+            }
+            & .dateCards{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                & .nameDate{
+                    width: 70%;
+                }
+                & .dateDaysUser{
+                    width: 30%;
+                }
+            }
+            & .dateCards{
+                margin-top: 5%;
+                margin-left: 10%;
+                font-size: 1rem;
+            }
+        }
+        & .container-1-cardTwo{
+            position: absolute;
+            top: 65%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            background-image: url('../images/bg-card-back.png');
+            color: var(--colorWhite);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            width: 30vw;
+            height: 29vh;
+            z-index: 1;
+            & .dateCvc{
+                margin-top: 21%;
+                margin-left: 80%;         
+            }
+        }
+    }
+    & .container-2{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 65vw;
+        height: 100vh;
+        & .section{
+            & .form{
+                width: 50vw;
+                height: 60vh;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                background-color: var(--colorWhite); 
+                padding: 20px;
+                & article{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+.date-User{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    & .date-User-date{
+        width: 48%;
+        & .date-User-date-div input{
+            width: 4vw;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    }
+    & .date-User-cvc{
+        width: 48%;  
+    }
+}
+.form article * {
+    display: block;
+}
+.Dom{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #818181;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    z-index: 10;
+}
+.Dom:focus {
+    outline: none;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #818181;
+    background-color: var(--colorButton);
+    color: var(--colorWhite);
+    cursor: pointer;
+}
+.textAlert{
+    height: 3vh;
+    line-height: 3vh;
+    color: #e78282;
+}
+.messageThank{
+    display: none;
+    text-align: center;
+    & .titleThank{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: var(--colorButton);
+    }
+    & .textSendDate{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #818181;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    & .container{
+        display: flex;
+        flex-direction: column;
+        & .container-1{
+            width: 100vw;
+            & .container-1-cardOne{
+                width: 70vw;
+                margin-left: 13%;
+                z-index: 2;
+            }
+            & .container-1-cardTwo{
+                width: 70vw;
+                margin-left: 13%;
+                top: 17%;
+                left: 47%;    
+            }
+        }
+    }
+    & .form{
+        margin-top: 10%;
+    }
+}
+
+
+
+
+.body-login {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#login-form button:hover {
+    opacity: 0.8;
 }
