@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="https://kit.fontawesome.com/c91ca5f5f4.js" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <title>Electronica Bertrand</title>
+</head>
+<body>
+    <header>
+        <!-- barra de navegacion y carrito -->
+        <nav>
+            <ul>
+                <li><a href="../src/index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Conocenos</a></li>
+            </ul>
+            <ul>
+                <li><i class="fa-solid fa-cart-shopping carShop"></i></li>
+            </ul>
+        </nav>
+        <section class="image">
+            <h1 class="image-title">Electronica Bertrand</h1>
+        </section>
+    </header>
+    <main>
+        <!-- cards de presentacion -->
+        <section class="cards">
+            <article class="cards-containers">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <p>Confiables</p>
+            </article>
+            <article class="cards-containers">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <p>Rapidos</p>
+            </article>
+            <article class="cards-containers">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p>Seguros</p>
+            </article>
+        </section>
+        <!-- Consejos de la empresa -->
+        <section class="title-boards">
+            <h2 class="consejos">Consejos</h2>
+        </section>
+        <section class="board">
+            <article>
+                <img src="../image/c1.jpg" alt="">
+            </article>
+            <article>
+                <img src="../image/c2.jpg" alt="">
+            </article>
+            <article>
+                <img src="../image/c3.jpg" alt="">
+            </article>
+            <article>
+                <img src="../image/c4.jpg" alt="">
+            </article>
+            <article>
+                <img src="../image/c5.jpg" alt="">
+            </article>
+            <article>
+                <img src="../image/c6.jpg" alt="">
+            </article>
+        </section>
+        <!-- Productos -->
+        <h2 class="title-products">Productos</h2>
+        <section class="container-products">
+            <article class="Products">
+                <img src="https://firebasestorage.googleapis.com/v0/b/nutristock-fba06.appspot.com/o/electronica_bertrand%2FWhatsApp%20Image%202024-05-25%20at%2011.28.25%20AM%20(1).jpeg?alt=media&token=4476f61d-1172-4db1-890f-a99c86da6ea6" alt="">
+                <p class="title-product">Cargador Tipo C color negro</p>
+                <p class="price-product">$250</p>
+                <button class="bton-product">Carrito</button>
+            </article>
+            <article class="Products">
+                <img src="https://firebasestorage.googleapis.com/v0/b/nutristock-fba06.appspot.com/o/electronica_bertrand%2FWhatsApp%20Image%202024-05-25%20at%2011.28.25%20AM%20(2).jpeg?alt=media&token=41a069bb-107c-47ae-a606-d70df1630fe9" alt="">
+                <p class="title-product">USB tipo C</p>
+                <p class="price-product">$100</p>
+                <button class="bton-product">Carrito</button>
+            </article>
+            <article class="Products">
+                <img src="https://firebasestorage.googleapis.com/v0/b/nutristock-fba06.appspot.com/o/electronica_bertrand%2FWhatsApp%20Image%202024-05-25%20at%2011.28.25%20AM%20(3).jpeg?alt=media&token=b737df48-1b97-472b-9f76-084a8410dfa3" alt="">
+                <p class="title-product">Mica de cristal Motorola</p>
+                <p class="price-product"p>$60</p>
+                <button class="bton-product">Carrito</button>
+            </article>
+            <article class="Products">
+                <img src="https://firebasestorage.googleapis.com/v0/b/nutristock-fba06.appspot.com/o/electronica_bertrand%2FWhatsApp%20Image%202024-05-25%20at%2011.28.25%20AM%20(4).jpeg?alt=media&token=514aaa12-1b6f-4cb6-95fb-8557b09541d0" alt="">
+                <p class="title-product">Mica de cristal Samsung</p>
+                <p class="price-product"p>$80</p>
+                <button class="bton-product">Carrito</button>
+            </article>
+            <article class="Products">
+                <img src="https://firebasestorage.googleapis.com/v0/b/nutristock-fba06.appspot.com/o/electronica_bertrand%2FWhatsApp%20Image%202024-05-25%20at%2011.28.25%20AM.jpeg?alt=media&token=23cb4648-7380-46c3-a687-96010dca999f" alt="">
+                <p class="title-product">Cargador Tipo C color blanco</p>
+                <p class="price-product">$250</p>
+                <button class="bton-product">Carrito</button>
+            </article>
+            <article class="Products">
+                <img src="https://firebasestorage.googleapis.com/v0/b/nutristock-fba06.appspot.com/o/electronica_bertrand%2FAUT117-5.jpg?alt=media&token=5d2cf9f7-23a2-4faa-a763-f5d3921eab32" alt="">
+                <p class="title-product">Audifonos alambricos color negro</p>
+                <p class="price-product">$130</p>
+                <button class="bton-product">Carrito</button>
+            </article>
+        </section>
+        <!-- Contacto y ubicacion -->
+        <section class="title-contac">
+            <h2 >Conoce nuestra tienda</h2>
+        </section>
+        <section class="datos">
+            <article>
+                <h3>Ubicacion</h3>
+                <p> <i class="fa-solid fa-house"></i> Morelos 3 Col Francisco VIlla, Ciudad Valles, Mexico, 79010</p>
+                <p> <i class="fa-solid fa-location-dot"></i> Ciudad Valles Centro, San Luis Potosi, Mexico</p>
+                <p> <i class="fa-solid fa-phone"></i> 481 105 6613</p>
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7398.263097007943!2d-99.031418!3d22.00627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d60d94c804be5b%3A0x4e9ecdbd4afcb2ba!2sElectronica%20Bertrand!5e0!3m2!1ses!2smx!4v1714155718855!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+
+        <!-- sections of the page web -->
+        <section>
+            <div class="ProductosShop" >
+                <p class="notProducts">No products</p>
+            </div>
+            <div class="buy">
+                <button type="submit" id="checkout-button" class="checkout-button-card"><a href="../src/success.html">Checkout</a></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
